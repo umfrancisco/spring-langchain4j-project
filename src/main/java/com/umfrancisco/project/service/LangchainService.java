@@ -11,7 +11,7 @@ import dev.langchain4j.model.ollama.OllamaChatModel;
 @Service
 public class LangchainService {
 	
-	@Value("${api.ollama.ipv4}")
+	@Value("${api.ollama.url}")
 	public String ipv4;
 	
 	public String run(String prompt) {
