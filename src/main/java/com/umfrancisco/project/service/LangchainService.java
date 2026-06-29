@@ -12,12 +12,12 @@ import dev.langchain4j.model.ollama.OllamaChatModel;
 public class LangchainService {
 	
 	@Value("${api.ollama.url}")
-	public String ipv4;
+	public String url;
 	
 	public String run(String prompt) {
 		
 		ChatLanguageModel model = OllamaChatModel.builder()
-				.baseUrl(ipv4)
+				.baseUrl(url)
 				.modelName("phi3:mini")
 				.timeout(Duration.ofMinutes(2))
 				.temperature(0.7)
