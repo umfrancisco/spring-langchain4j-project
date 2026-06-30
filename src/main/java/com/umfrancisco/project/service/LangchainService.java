@@ -17,6 +17,7 @@ public class LangchainService {
 	
 	@Value("${api.ollama.url}")
 	public String url;
+	public String runningModel = "phi4-mini:latest";
 	private ProductRepository repository;
 	
 	public LangchainService(ProductRepository repository) {
@@ -42,7 +43,7 @@ public class LangchainService {
 		
 		ChatLanguageModel model = OllamaChatModel.builder()
 				.baseUrl(url)
-				.modelName("phi3:mini")
+				.modelName(runningModel)
 				.timeout(Duration.ofMinutes(15))
 				.temperature(0.0)
 				.logRequests(true)
@@ -60,7 +61,8 @@ public class LangchainService {
 		return products;
 	}
 	
-	public static String chat(ChatLanguageModel model, String prompt) {
+	public String chat(ChatLanguageModel model, String prompt) {
+		System.out.println("Model: "+runningModel);
 		System.out.println("["+getDateTime()+"] Prompt:\n" + prompt);
         System.out.println("-- Sending request to Ollama -- ");
         
@@ -75,7 +77,7 @@ public class LangchainService {
         return "ERROR";
 	}
 	
-	public static String getDateTime() {
+	public String getDateTime() {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		LocalDateTime now = LocalDateTime.now();
 		return now.format(formatter);

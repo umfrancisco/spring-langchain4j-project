@@ -43,6 +43,7 @@
 2026-06-30T09:15:13.391-03:00  INFO 12544 --- [spring-langchain4j-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-06-30T09:15:13.395-03:00  INFO 12544 --- [spring-langchain4j-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
 Hibernate: select p1_0.id,p1_0.category,p1_0.description,p1_0.image_url,p1_0.long_description,p1_0.name,p1_0.platforms,p1_0.price,p1_0.stock from product p1_0
+Model: phi3:mini
 [2026-06-30 09:15:14] Prompt:
 Instructions:
 Be concise. Use ONLY this data.
