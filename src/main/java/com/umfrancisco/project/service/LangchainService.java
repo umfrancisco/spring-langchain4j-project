@@ -61,7 +61,7 @@ public class LangchainService {
 	}
 	
 	public static String chat(ChatLanguageModel model, String prompt) {
-		System.out.println("["+getDateTime()+"] Prompt: " + prompt);
+		System.out.println("["+getDateTime()+"] Prompt:\n" + prompt);
         System.out.println("-- Sending request to Ollama -- ");
         
         try {
