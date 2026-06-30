@@ -3,8 +3,12 @@ package com.umfrancisco.project.service;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import com.umfrancisco.project.model.ProductDTO;
+import com.umfrancisco.project.repository.ProductRepository;
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.ollama.OllamaChatModel;
 
@@ -13,19 +17,47 @@ public class LangchainService {
 	
 	@Value("${api.ollama.url}")
 	public String url;
+	private ProductRepository repository;
 	
-	public String run(String prompt) {
+	public LangchainService(ProductRepository repository) {
+		this.repository = repository;
+	}
+	
+	public String run(String questions) {
+		String prompt = """
+				Instructions:
+				Be concise. Use ONLY this data.
+				
+				Data:
+				%s
+				
+				Questions:
+				%s
+				""";
+		var products = getProducts();
+		
+		if (products.isEmpty()) {
+			return "Empty database";
+		}
 		
 		ChatLanguageModel model = OllamaChatModel.builder()
 				.baseUrl(url)
 				.modelName("phi3:mini")
-				.timeout(Duration.ofMinutes(2))
-				.temperature(0.7)
+				.timeout(Duration.ofMinutes(15))
+				.temperature(0.0)
 				.logRequests(true)
 				.logResponses(true)
 				.build();
 		
-		return chat(model, prompt);
+		return chat(model, prompt.formatted(products, questions));
+	}
+	
+	public List<ProductDTO> getProducts() {
+		List<ProductDTO> products = new ArrayList<>();
+		for (var p : repository.findAll()) {
+			products.add(new ProductDTO(p.getId(), p.getName(), p.getPrice(), p.getStock()));
+		}
+		return products;
 	}
 	
 	public static String chat(ChatLanguageModel model, String prompt) {
