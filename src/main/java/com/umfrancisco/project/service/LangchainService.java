@@ -12,6 +12,14 @@ import com.umfrancisco.project.repository.ProductRepository;
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.ollama.OllamaChatModel;
 
+//  NAME                ID              SIZE      MODIFIED           
+//  gemma3:1b           8648f39daa8f    815 MB    59 seconds ago        
+//  llama3.2:1b         baf6a787fdff    1.3 GB    About a minute ago    
+//  phi4-mini:latest    78fad5d182a7    2.5 GB    22 hours ago          
+//  phi3:mini           4f2222927938    2.2 GB    2 days ago            
+//  smallthinker:3b     945eb1864589    3.6 GB    3 days ago            
+//  qwen3.5:9b          6488c96fa5fa    6.6 GB    4 days ago 
+
 @Service
 public class LangchainService {
 	

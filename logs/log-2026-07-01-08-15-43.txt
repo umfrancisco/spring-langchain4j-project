@@ -1,0 +1,101 @@
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-01T08:15:08.276-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] .u.p.SpringLangchain4jProjectApplication : Starting SpringLangchain4jProjectApplication using Java 17.0.12 with PID 6069 (/home/francisco/Documents/java-workspaces/projects/spring-langchain4j-project/target/classes started by francisco in /home/francisco/Documents/java-workspaces/projects/spring-langchain4j-project)
+2026-07-01T08:15:08.299-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] .u.p.SpringLangchain4jProjectApplication : No active profile set, falling back to 1 default profile: "default"
+2026-07-01T08:15:10.115-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-01T08:15:10.229-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interface.
+2026-07-01T08:15:11.322-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-01T08:15:11.350-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-01T08:15:11.351-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-01T08:15:11.483-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2961 ms
+2026-07-01T08:15:11.916-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-01T08:15:12.093-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-01T08:15:13.039-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-01T08:15:13.101-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-01T08:15:13.709-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@47b4ac83
+2026-07-01T08:15:13.712-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-01T08:15:13.907-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.14
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-01T08:15:15.868-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-01T08:15:15.988-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-01T08:15:16.143-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-01T08:15:16.337-03:00  WARN 6069 --- [spring-langchain4j-project] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-01T08:15:17.047-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-01T08:15:17.060-03:00  INFO 6069 --- [spring-langchain4j-project] [           main] .u.p.SpringLangchain4jProjectApplication : Started SpringLangchain4jProjectApplication in 9.806 seconds (process running for 10.696)
+2026-07-01T08:15:42.400-03:00  INFO 6069 --- [spring-langchain4j-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-01T08:15:42.401-03:00  INFO 6069 --- [spring-langchain4j-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-01T08:15:42.407-03:00  INFO 6069 --- [spring-langchain4j-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+Hibernate: select p1_0.id,p1_0.category,p1_0.description,p1_0.image_url,p1_0.long_description,p1_0.name,p1_0.platforms,p1_0.price,p1_0.stock from product p1_0
+Model: phi4-mini:latest
+[2026-07-01 08:15:43] Prompt:
+Instructions:
+Be concise. Use ONLY this data.
+
+Data:
+[{id=1, name=Batman Arkham Asylum, price=90.00, stock=60}, {id=2, name=Grand Theaft Auto IV, price=89.90, stock=40}, {id=3, name=Red Dead Redemption, price=99.90, stock=80}, {id=4, name=The Elder Scrolls V: Skyrim, price=87.90, stock=90}, {id=5, name=Sleeping Dogs, price=70.00, stock=60}, {id=6, name=Assassin's Creed II, price=89.90, stock=80}, {id=7, name=Call of Duty: Modern Warfare 3, price=79.90, stock=40}, {id=8, name=Dead Rising, price=90.50, stock=40}, {id=9, name=Assassin's Creed III, price=102.89, stock=50}, {id=10, name=God of War II, price=85.49, stock=30}, {id=11, name=Diablo III, price=79.99, stock=50}, {id=12, name=Lenovo Ideapad, price=4229.10, stock=20}, {id=13, name=Asus Vivobook, price=3699.99, stock=15}, {id=14, name=MacBook Air, price=8249.00, stock=20}, {id=15, name=Acer Aspire, price=3749.99, stock=15}, {id=16, name=Predator Helios Neo, price=12149.10, stock=20}, {id=17, name=Asus Tuf Gaming, price=7649.00, stock=15}, {id=18, name=Kit Teclado e Mouse AOC, price=50.90, stock=10}, {id=19, name=Headset Gamer XPG, price=149.99, stock=15}, {id=20, name=Mouse Gamer, price=189.99, stock=10}]
+
+Questions:
+What kind of products do you have?
+
+-- Sending request to Ollama -- 
+
+[2026-07-01 08:17:34] Response:
+We sell video games and electronic devices like laptops, keyboards, mice, headsets, etc.
+
+Hibernate: select p1_0.id,p1_0.category,p1_0.description,p1_0.image_url,p1_0.long_description,p1_0.name,p1_0.platforms,p1_0.price,p1_0.stock from product p1_0
+Model: phi4-mini:latest
+[2026-07-01 08:18:01] Prompt:
+Instructions:
+Be concise. Use ONLY this data.
+
+Data:
+[{id=1, name=Batman Arkham Asylum, price=90.00, stock=60}, {id=2, name=Grand Theaft Auto IV, price=89.90, stock=40}, {id=3, name=Red Dead Redemption, price=99.90, stock=80}, {id=4, name=The Elder Scrolls V: Skyrim, price=87.90, stock=90}, {id=5, name=Sleeping Dogs, price=70.00, stock=60}, {id=6, name=Assassin's Creed II, price=89.90, stock=80}, {id=7, name=Call of Duty: Modern Warfare 3, price=79.90, stock=40}, {id=8, name=Dead Rising, price=90.50, stock=40}, {id=9, name=Assassin's Creed III, price=102.89, stock=50}, {id=10, name=God of War II, price=85.49, stock=30}, {id=11, name=Diablo III, price=79.99, stock=50}, {id=12, name=Lenovo Ideapad, price=4229.10, stock=20}, {id=13, name=Asus Vivobook, price=3699.99, stock=15}, {id=14, name=MacBook Air, price=8249.00, stock=20}, {id=15, name=Acer Aspire, price=3749.99, stock=15}, {id=16, name=Predator Helios Neo, price=12149.10, stock=20}, {id=17, name=Asus Tuf Gaming, price=7649.00, stock=15}, {id=18, name=Kit Teclado e Mouse AOC, price=50.90, stock=10}, {id=19, name=Headset Gamer XPG, price=149.99, stock=15}, {id=20, name=Mouse Gamer, price=189.99, stock=10}]
+
+Questions:
+Find the cheapest game available
+
+-- Sending request to Ollama -- 
+
+[2026-07-01 08:18:08] Response:
+The cheapest game available is Sleeping Dogs with a price of 70.00.
+
+Hibernate: select p1_0.id,p1_0.category,p1_0.description,p1_0.image_url,p1_0.long_description,p1_0.name,p1_0.platforms,p1_0.price,p1_0.stock from product p1_0
+Model: phi4-mini:latest
+[2026-07-01 08:19:17] Prompt:
+Instructions:
+Be concise. Use ONLY this data.
+
+Data:
+[{id=1, name=Batman Arkham Asylum, price=90.00, stock=60}, {id=2, name=Grand Theaft Auto IV, price=89.90, stock=40}, {id=3, name=Red Dead Redemption, price=99.90, stock=80}, {id=4, name=The Elder Scrolls V: Skyrim, price=87.90, stock=90}, {id=5, name=Sleeping Dogs, price=70.00, stock=60}, {id=6, name=Assassin's Creed II, price=89.90, stock=80}, {id=7, name=Call of Duty: Modern Warfare 3, price=79.90, stock=40}, {id=8, name=Dead Rising, price=90.50, stock=40}, {id=9, name=Assassin's Creed III, price=102.89, stock=50}, {id=10, name=God of War II, price=85.49, stock=30}, {id=11, name=Diablo III, price=79.99, stock=50}, {id=12, name=Lenovo Ideapad, price=4229.10, stock=20}, {id=13, name=Asus Vivobook, price=3699.99, stock=15}, {id=14, name=MacBook Air, price=8249.00, stock=20}, {id=15, name=Acer Aspire, price=3749.99, stock=15}, {id=16, name=Predator Helios Neo, price=12149.10, stock=20}, {id=17, name=Asus Tuf Gaming, price=7649.00, stock=15}, {id=18, name=Kit Teclado e Mouse AOC, price=50.90, stock=10}, {id=19, name=Headset Gamer XPG, price=149.99, stock=15}, {id=20, name=Mouse Gamer, price=189.99, stock=10}]
+
+Questions:
+Find the cheapest laptop available
+
+-- Sending request to Ollama -- 
+
+[2026-07-01 08:19:49] Response:
+The Lenovo Ideapad is currently priced at $4229.10 and has 20 units in stock. However, this item appears to be a desktop computer rather than a traditional laptop.
+
+Among laptops listed:
+
+- Acer Aspire: price = $3749.99 (15 units)
+- Asus Vivobook: price = $3699.99 (15 units)
+
+The cheapest available laptop is the **Acer Aspire** at $3749.99 with 15 in stock.
