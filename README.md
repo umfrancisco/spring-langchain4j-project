@@ -1,6 +1,6 @@
-# AI Assistant with Spring Boot, LangChain4j & Ollama
+# Assistente de IA com Spring Boot, PostgreSQL, LangChain4j & Ollama
 
-This repository contains a Spring Boot 4 application demonstrating how to build a local, private, and cost-free AI Assistant using LangChain4j and Ollama.
+Este projeto é uma API REST de um assistente de IA desenvolvida com foco em boas práticas de arquitetura, organização de código e padrões utilizados no mercado. Ele permite que o usuário faça perguntas sobre os dados armazenados em um banco de dados relacional, PostgreSQL. A aplicação é uma demonstração também de como integrar modelos locais de IA a aplicações web com Spring Boot.
 
 ## Tech Stack
 
@@ -9,7 +9,7 @@ This repository contains a Spring Boot 4 application demonstrating how to build 
 - LangChain4J
 - Ollama
 
-## Author
+## Autor
 Developed by Francisco Guitler
 
 

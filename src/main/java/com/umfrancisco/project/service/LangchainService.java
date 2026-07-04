@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import com.umfrancisco.project.model.ProductDTO;
 import com.umfrancisco.project.repository.ProductRepository;
+
+import dev.langchain4j.agent.tool.Tool;
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.ollama.OllamaChatModel;
 
