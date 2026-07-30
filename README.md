@@ -10,7 +10,7 @@ Este projeto é uma API REST de um assistente de IA desenvolvida com foco em boa
 
 ## Tech Stack
 
-- Java 17+
+- Java 17
 - Maven 3.8+
 - LangChain4J
 - Ollama
